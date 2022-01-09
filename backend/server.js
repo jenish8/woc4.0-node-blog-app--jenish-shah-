@@ -19,6 +19,9 @@ const userRoutes = require("./app/routes/user.routes");
 
 const app = express();
 
+//table creation
+const user=require("./app/model/user.model");
+
 //Database Connection
 mongoose
   .connect(process.env.DB_URL, {
